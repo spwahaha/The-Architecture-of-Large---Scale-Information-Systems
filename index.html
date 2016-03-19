@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Gallery</title>
+</head>
+<body>
+    <div class="sessionInfo">
+      <h3>NetID: #loginId#</h3>
+      <h3>Session: #SessionId#</h3>
+      <h3>Version: #VersionNumber#</h3>
+      <h3>Date: #SessionDateInfo#</h3>
+    </div>
+    <h1>Hello User</h1>
+    <form action="http://localhost:8080/P1/hello" method="get">
+      <input type="submit" name="replace" value="replace">
+      <input type="text" name="replaceInfo">
+    </form>
+    <form action="http://localhost:8080/P1/hello" method="get">
+      <input type="submit" name="refresh" value="refresh">
+    </form>
+    <form action="http://localhost:8080/P1/hello" method="get">
+      <input type="submit" name="logOut" value="logOut">
+    </form>
+    <div class="cookiesInfo">
+      <h3>Cookie: #cookieValue#</h3>  
+      <h3>Expires: #CookieDateInfo#</h3>
+    </div>
+</body>
+<html>
