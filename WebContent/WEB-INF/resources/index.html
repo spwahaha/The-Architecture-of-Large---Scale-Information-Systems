@@ -8,17 +8,18 @@
    <title>Gallery</title>
 </head>
 <style>
-  .sessionInfo h3{float: left; width: 25%;}
-  .cookiesInfo h3{float: left;width: 50%;}
+  .sessionInfo h3{float: left;}
+  .cookiesInfo #left{float: left;width: 50%;}
+  .cookiesInfo #right{float: right; padding-right:100px;}
   h1{text-align: center;}
-  
+  form{padding:10px; margin:0 30%;}
 </style>
 <body>
     <div class="sessionInfo">
-      <h3>Session message: #SessionMsg#</h3>
-      <h3>Session: #SessionId#</h3>
-      <h3>Version: #VersionNumber#</h3>
-      <h3>Date: #SessionDateInfo#</h3>
+      <h3 style="width: 15%">NetID: zp55</h3>
+      <h3 style="width: 35%">Session: #SessionId#</h3>
+      <h3 style="width: 15%">Version: #VersionNumber#</h3>
+      <h3 style="width: 35%">Session Expire Date: #SessionDateInfo#</h3>
     </div>
     <h1>#SessionMsg#</h1>
     <form action="http://localhost:8080/P1/hello" method="get">
@@ -32,8 +33,8 @@
       <input type="submit" name="logOut" value="logOut">
     </form>
     <div class="cookiesInfo">
-      <h3>Cookie: #cookieValue#</h3>  
-      <h3>Expires: #CookieDateInfo#</h3>
+      <h3 id="left">Cookie: #cookieValue#</h3>  
+      <h3 id="right">Cookie Expire Date: #CookieDateInfo#</h3>
     </div>
 </body>
 <html>

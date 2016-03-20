@@ -3,11 +3,18 @@ package SessionManager;
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class Session {
+public class Session extends Object {
 	private String Id;
 	private Integer version;
 	private String message;
 	private Date expireTime;
+	private String defaultMsg = "Hello, User!";
+	public Session(String id, Integer version, Date expireTime){
+		this.Id = id;
+		this.version = version;
+		this.message = this.defaultMsg;
+		this.expireTime = expireTime;
+	}
 	
 	public Session(String id, Integer version, String msg, Date expireTime){
 		this.Id = id;
